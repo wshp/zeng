@@ -5,14 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-{% for foo in po %}
-     <a href="{% url 'post_list' foo.id %}">{{ foo.title }}</a>
-    <br>
-
-
-
-{% endfor %}
-
+<h3>{{ post.title }}</h3>
+<p>{{ post.body }}</p>
+<a href="#">删除</a>
+<a href="#">修改</a>
 
 </body>
 </html>
