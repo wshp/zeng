@@ -7,8 +7,8 @@
 <body>
 <h3>{{ post.title }}</h3>
 <p>{{ post.body }}</p>
-<a href="#">删除</a>
-<a href="#">修改</a>
+<a href="{% url 'post_delete' post.id %}">删除</a>
+<a href="{% url 'post_update' post.id %}">修改</a>
 
 </body>
 </html>
